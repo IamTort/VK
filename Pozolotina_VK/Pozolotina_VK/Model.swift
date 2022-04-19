@@ -1,14 +1,14 @@
 //
-//  Groups.swift
+//  Model.swift
 //  Pozolotina_VK
 //
-//  Created by angelina on 16.04.2022.
+//  Created by angelina on 19.04.2022.
 //
 
 import Foundation
 import UIKit
 
-class Groups {
+class Group {
     let image: UIImage?
     let name: String
     
@@ -16,4 +16,11 @@ class Groups {
         self.image = image
         self.name = name
     }
+}
+
+
+struct User {
+    let image: UIImage?
+    let name: String
+    //let friends: [PFriends]
 }

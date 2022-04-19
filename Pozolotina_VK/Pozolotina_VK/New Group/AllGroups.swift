@@ -10,10 +10,10 @@ import UIKit
 class AllGroups: UITableViewController {
 
     var myGroups = [
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Дальнобойщики"),
-        Groups(image: nil, name: "Смешные коты"),
-        Groups(image: nil, name: "Путешествия по Золотому кольцу"),
-        Groups(image: nil, name: "Дородные доярки"),
+        Group(image: UIImage(named: "bigcar")!, name: "Дальнобойщики"),
+        Group(image: UIImage(named: "cat")!, name: "Смешные коты"),
+        Group(image: UIImage(named: "goldring")!, name: "Путешествия по Золотому кольцу"),
+        Group(image: UIImage(named: "cowgirl")!, name: "Дородные доярки"),
     ]
     
     override func viewDidLoad() {

@@ -10,10 +10,10 @@ import UIKit
 class FriendsController: UITableViewController {
     
     var friends = [
-        Friends(image: UIImage.init(systemName: "circle.dashed")!, name: "Nikita", friends: PFriendsArray),
-        Friends(image: UIImage.init(systemName: "circle.dashed")!, name: "Stepan", friends: PFriendsArray),
-        Friends(image: UIImage.init(systemName: "circle.dashed")!, name: "Anna", friends: PFriendsArray),
-        Friends(image: UIImage.init(systemName: "circle.dashed")!, name: "Angelina", friends: PFriendsArray),
+        User(image: UIImage(named: "ava")!, name: "Nikita"),
+        User(image: UIImage(named: "ava")!, name: "Stepan"),
+        User(image: UIImage(named: "ava")!, name: "Anna"),
+        User(image: UIImage(named: "ava")!, name: "Angelina")
     ]
     
     
@@ -60,24 +60,14 @@ class FriendsController: UITableViewController {
         performSegue(withIdentifier: "checkPhoto", sender: indexPath)
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            if segue.identifier == "checkPhoto",
-//                let indexPath = sender as? IndexPath, let controller = segue.destination as? PhotoController {
-//
-//                controller.friends.append(friends[indexPath.row])
-//
-//                controller.friendsImageView = friends[indexPath.row].image
-//               // controller.reloadInputViews()
-//            }
-//        }
-//
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 if segue.identifier == "checkPhoto",
-                   let destination = segue.destination as? PhotoController,
-                   let indexPath = tableView.indexPathForSelectedRow {
-                        destination.friendsName = friends[indexPath.row].name
-                        destination.friends = friends[indexPath.row].friends
+                let destination = segue.destination as? PhotoController,
+                let indexPath = tableView.indexPathForSelectedRow {
+                    
+                    //destination.friendsName = friends[indexPath.row].name
+                    destination.friends.append(friends[indexPath.row])
 
                 //destination.reloadInputViews()
         }

@@ -9,7 +9,7 @@ import UIKit
 
     private let reuseIdentifier = "Cell"
 class PhotoController: UICollectionViewController {
-    var friends = [PFriends]()
+    var friends = [User]()
     var friendsName: String?
     var friendsImageView : UIImage?
     override func viewDidLoad() {
@@ -25,38 +25,6 @@ class PhotoController: UICollectionViewController {
     }
     
 
-//    @IBAction func checkPhoto(segue: UIStoryboardSegue) {
-//        // Проверяем идентификатор, чтобы убедиться, что это нужный переход
-//        if segue.identifier == "checkPhoto" {
-//        // Получаем ссылку на контроллер, с которого осуществлен переход
-//           if let friendsController = segue.source as? FriendsController,
-//                // Получаем индекс выделенной ячейки
-//            let indexPath = friendsController.tableView.indexPathForSelectedRow {
-//               // Получаем город по индексу
-//               let group = friendsController.friends[indexPath.row]
-//                    // Проверяем, что такого города нет в списке
-//
-//                // Добавляем город в список выбранных городов
-//                   friends.append(group)
-//                print(friends)
-//                // Обновляем таблицу
-//                   collectionView.reloadData()
-//
-//            }
-//        }
-//    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections

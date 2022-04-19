@@ -18,10 +18,9 @@
 		FA9EB67A2809B9ED00AC80F3 /* NotMyGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EB6792809B9ED00AC80F3 /* NotMyGroupsController.swift */; };
 		FA9EB67C2809BD6400AC80F3 /* NoMyGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EB67B2809BD6400AC80F3 /* NoMyGroupCell.swift */; };
 		FAA4D463280A036200BDDB17 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4D462280A036200BDDB17 /* FriendsCell.swift */; };
-		FAA4D465280AA66500BDDB17 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4D464280AA66500BDDB17 /* Friends.swift */; };
+		FAC5F1CD280EB87800FA2A0E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5F1CC280EB87800FA2A0E /* Model.swift */; };
 		FADC49AB280AE5090048E74F /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC49AA280AE5090048E74F /* PhotoController.swift */; };
 		FADC49AD280AE51E0048E74F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC49AC280AE51E0048E74F /* PhotoCell.swift */; };
-		FADC49AF280AF6710048E74F /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC49AE280AF6710048E74F /* Groups.swift */; };
 		FAF81FFD2809E92100E74BB4 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81FFC2809E92100E74BB4 /* FriendsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,10 +38,9 @@
 		FA9EB6792809B9ED00AC80F3 /* NotMyGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotMyGroupsController.swift; sourceTree = "<group>"; };
 		FA9EB67B2809BD6400AC80F3 /* NoMyGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMyGroupCell.swift; sourceTree = "<group>"; };
 		FAA4D462280A036200BDDB17 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
-		FAA4D464280AA66500BDDB17 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		FAC5F1CC280EB87800FA2A0E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FADC49AA280AE5090048E74F /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		FADC49AC280AE51E0048E74F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		FADC49AE280AF6710048E74F /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		FAF81FFC2809E92100E74BB4 /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 1; path = FriendsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +79,7 @@
 				FA9EB6782809B95D00AC80F3 /* NotMyGroupYet */,
 				FA9EB67228095E0100AC80F3 /* New Group */,
 				FA9EB65E2804676200AC80F3 /* AppDelegate.swift */,
+				FAC5F1CC280EB87800FA2A0E /* Model.swift */,
 				FA9EB6602804676200AC80F3 /* SceneDelegate.swift */,
 				FA9EB6622804676200AC80F3 /* ViewController.swift */,
 				FA9EB6642804676200AC80F3 /* Main.storyboard */,
@@ -96,7 +95,6 @@
 			children = (
 				FA9EB67328095E6200AC80F3 /* AllGroups.swift */,
 				FA9EB67528095E8D00AC80F3 /* GroupsCell.swift */,
-				FADC49AE280AF6710048E74F /* Groups.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -124,7 +122,6 @@
 			children = (
 				FAF81FFC2809E92100E74BB4 /* FriendsController.swift */,
 				FAA4D462280A036200BDDB17 /* FriendsCell.swift */,
-				FAA4D464280AA66500BDDB17 /* Friends.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -203,10 +200,9 @@
 				FA9EB67628095E8D00AC80F3 /* GroupsCell.swift in Sources */,
 				FAA4D463280A036200BDDB17 /* FriendsCell.swift in Sources */,
 				FA9EB67C2809BD6400AC80F3 /* NoMyGroupCell.swift in Sources */,
-				FAA4D465280AA66500BDDB17 /* Friends.swift in Sources */,
-				FADC49AF280AF6710048E74F /* Groups.swift in Sources */,
 				FADC49AD280AE51E0048E74F /* PhotoCell.swift in Sources */,
 				FA9EB6632804676200AC80F3 /* ViewController.swift in Sources */,
+				FAC5F1CD280EB87800FA2A0E /* Model.swift in Sources */,
 				FADC49AB280AE5090048E74F /* PhotoController.swift in Sources */,
 				FA9EB65F2804676200AC80F3 /* AppDelegate.swift in Sources */,
 				FA9EB67A2809B9ED00AC80F3 /* NotMyGroupsController.swift in Sources */,

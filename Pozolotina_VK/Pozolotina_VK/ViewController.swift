@@ -53,16 +53,18 @@ class ViewController: UIViewController {
     @objc func hideKeyboard() { self.scrollView?.endEditing(true)
     }
 
+        //работает не верно без func shouldPerformSegue
     @IBAction func loginButton(_ sender: Any) {
         // Получаем текст логина
-        let login = loginInput.text!
+        guard let login = loginInput.text,
         // Получаем текст-пароль
-        let password = passwordInput.text!
+        let password = passwordInput.text,
         // Проверяем, верны ли они
-        if login == "" && password == "" { print("успешная авторизация")
-        } else {
-        print("неуспешная авторизация")
+        login == "", password == "" else {
+            print("неуспешная авторизация")
+            return
         }
+        performSegue(withIdentifier: "Login", sender: nil)
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -72,7 +74,7 @@ class ViewController: UIViewController {
             } else {
             return false
         }
-        
+
     }
     
 }

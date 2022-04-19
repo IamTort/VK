@@ -11,12 +11,12 @@ class NotMyGroupsController: UITableViewController {
 
     
     var availableGroup = [
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Сочные плюшки"),
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Ремонт и дом"),
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Автотюнинг"),
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Собиратели грибов"),
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Смешные коты"),
-        Groups(image: UIImage.init(systemName: "circle.dashed"), name: "Мамочки Москвы")
+        Group(image: UIImage(named: "ponchik")!, name: "Сочные плюшки"),
+        Group(image: UIImage(named: "remont")!, name: "Ремонт и дом"),
+        Group(image: UIImage(named: "avto")!, name: "Автотюнинг"),
+        Group(image: UIImage(named: "mushrooms")!, name: "Собиратели грибов"),
+        Group(image: UIImage(named: "cat")!, name: "Смешные коты"),
+        Group(image: UIImage(named: "moms")!, name: "Мамочки Москвы")
         ]
     override func viewDidLoad() {
         super.viewDidLoad()
